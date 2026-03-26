@@ -152,9 +152,32 @@
       background: #222;
       margin: 56px 0;
     }
+
+    nav {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 24px 24px 0;
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #444;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav a:hover { color: #888; }
+    nav a.nav-active { color: #fff; }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="/" class="nav-active">Home</a>
+    <a href="/privacy.html">Privacy</a>
+  </nav>
   <div class="container">
     <h1>Allah <em>&</em> I</h1>
     <p class="tagline">One question. Every day.</p>

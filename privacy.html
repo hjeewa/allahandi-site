@@ -19,9 +19,32 @@
     p { margin-bottom: 16px; }
     .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
     a { color: #888; }
+
+    nav {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 24px 20px 0;
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #444;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav a:hover { color: #888; }
+    nav a.nav-active { color: #fff; }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/privacy.html" class="nav-active">Privacy</a>
+  </nav>
   <h1>Privacy Policy</h1>
   <p class="updated">Last updated: March 25, 2026</p>
 
